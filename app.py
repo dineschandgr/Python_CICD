@@ -18,11 +18,11 @@ def index_page():
 def page_not_found(e):
     return redirect(url_for('index_page'))
 
-@application.route("/test")
+@app.route("/test")
 def index():
     return "Your Flask App Works!"
 
-@application.route("/hello")
+@app.route("/hello")
 def hello():
     return "Hello World!"
 
